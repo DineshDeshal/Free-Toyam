@@ -1,0 +1,123 @@
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 100px;
+}
+.contact-submain h1:hover{
+    transform: scale(1.2);
+    color: rgba(53, 173, 247, 0.818);
+}
+
+.contactform {
+    box-shadow: 0 0 10px rgb(166, 166, 241);
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 40px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.input {
+    margin: 20px;
+    text-align: center;
+    width: 100px;
+}
+
+input {
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+    outline: none;
+    
+}
+fieldset{
+    border-radius: 10px;
+}
+.btnsubmit{
+    text-align: center;
+}
+.contact-main img{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    margin-left: 60px;
+    box-shadow: 0 0 10px rgb(166, 166, 241);
+}
+.contact-main img:hover{
+    animation: contactimg 1s linear infinite;
+}
+@keyframes contactimg{
+    0% {
+            color: aquamarine;
+            transform: scale(1.1);
+            
+    
+        }
+    
+        30% {
+            color: rgb(81, 122, 246);
+            transform: scale(1.2);
+    
+        }
+    
+        60% {
+            color: rgb(17, 199, 239);
+            transform: scale(1.2);
+    
+        }
+    
+        100% {
+            color: rgb(28, 21, 246);
+            transform: scale(1.2);
+    
+        }
+}
+.presentation{
+    height: 100px;
+    width: 100vw;
+    
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 5px;
+   
+}
+.datails{
+    display: flex;
+    justify-content: space-between;
+
+}
+.webconnection{
+    margin: 10px;
+   
+    
+
+}
+.vision{
+    width: 35%;
+    
+
+}
+.webconnection a{
+    margin: 5px;
+}
+.email p{
+    text-align: end;
+
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+.email a{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 4px;
+    padding: 4px;
+    color: rgb(35, 39, 39);
+    
+}
+.copyright p{
+    text-align: center;
+    font-size: 15px;
+}
