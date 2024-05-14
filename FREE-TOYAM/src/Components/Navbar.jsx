@@ -18,7 +18,7 @@ export default function Navber() {
           </Link>
         </li>
         <li>
-          <Link to="/faq">FAQ</Link>
+          <Link to="/faq">FAQ's</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>

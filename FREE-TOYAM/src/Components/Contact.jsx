@@ -1,126 +1,84 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar.jsx";
+import contact from "../assets/contact.jpg";
 import "./Contact.css";
-import "boxicons";
-
-import logofreetoyam from "../assets/LOGO.jpeg";
-import { useNavigate } from "react-router-dom";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHand } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe, faPhone } from "@fortawesome/free-solid-svg-icons";
+import "boxicons";
 
 export default function Contact() {
   return (
     <>
       <Navbar></Navbar>
 
-      <div className="contact-main">
-        <div className="contact-submain">
-          <h1>Contact With Us For Advertise Your Brand</h1>
-          <div className="contactform">
-            <fieldset>
-              <legend>
-                Send us a Message
-                <span>
-                  <FontAwesomeIcon icon={faHand} shake />
-                </span>
-              </legend>
-              <form>
-                <div className="input">
-                  <label htmlFor="fname" id="fname"></label>
-                  <input
-                    type="text"
-                    value={name}
-                    name="fname"
-                    placeholder="First Name"
-                  />
-                </div>
-                <div className="input">
-                  <label htmlFor="lname" id="lname"></label>
-                  <input
-                    type="text"
-                    value={name}
-                    name="lname"
-                    placeholder="Last Name"
-                  />
-                </div>
-                <div className="input">
-                  <label htmlFor="name"></label>
-                  <input
-                    type="number"
-                    value={name}
-                    name="name"
-                    placeholder="phone number"
-                  />
-                </div>
-                <div className="input">
-                  <label htmlFor="name"></label>
-                  <input
-                    type="email"
-                    value={name}
-                    name="name"
-                    placeholder="Email"
-                  />
-                </div>
-                <div className="input">
-                  <label htmlFor="cname" id="cname"></label>
-                  <input
-                    type="text"
-                    value={name}
-                    name="cname"
-                    placeholder="city"
-                  />
-                </div>
-                <div className="btnsubmit">
-                  <button type="submit">Submit</button>
-                </div>
-              </form>
-            </fieldset>
+      <div className="main-contact">
+        <div className="sub-contact">
+          <div className="contact-img">
+            <img src={contact} alt="contact-img" />
+          </div>
+          <div className="contact-form">
+            <form>
+              <div className="legend">
+                <legend>
+                  Talk With Us
+                  <span className="contact-logo">
+                    <box-icon name="contact" type="solid"></box-icon>
+                  </span>
+                </legend>
+              </div>
+              <div className="inputs">
+                <input type="text" placeholder="First Name" />
+              </div>
+              <div className="inputs">
+                <input type="text" placeholder="Last Name" />
+              </div>
+              <div className="inputs">
+                <input type="email" placeholder="Email" />
+              </div>
+              <div className="inputs">
+                <input type="text" placeholder="Mob. " />
+              </div>
+              <div className="inputs">
+                <input type="text" placeholder="City" />
+              </div>
+              <div className="btn">
+                <button>Submit</button>
+              </div>
+            </form>
           </div>
         </div>
-        <div>
-          <img src={logofreetoyam} alt="" />
-        </div>
-      </div>
-      <div className="main-bottom">
-        <div className="presentation">
-          <div className="datails">
-            <div className="vision">
-              Hey All water is free Help us spread the word and share our
-              movement with your friends and family. We are the opposite of
-              traditional advertising because we are not annoying. Instead of
-              making the audience cringe or run for cover, we put a smile on
-              their face, and from that state of happiness is when they'll be
-              excited to support your brand.
-            </div>
-            <div className="webconnection">
-              <a href="https://www.instagram.com/freetoyam/" target="_blank">
-                <box-icon type="logo" name="instagram"></box-icon>
-              </a>
-
+        <div className="discription">
+          <div className="discription-intro">
+            Water Is Free To All Yes This Is True Help Us Spread The Word And
+            Share Our Movement With Your Friends And Family. Here We Are Working
+            As A Advertiser With Water Bottles.
+            <div className="webs">
               <a
                 href="https://www.linkedin.com/company/free-toyam/"
                 target="_blank"
               >
-                <box-icon name="linkedin" type="logo"></box-icon>
+                <box-icon type="logo" name="linkedin"></box-icon>
+              </a>
+              <a href="https://www.instagram.com/freetoyam/" target="_blank">
+                <box-icon name="instagram" type="logo"></box-icon>
               </a>
             </div>
-            <div className="email">
-              <p>
-                <a href="mailto:Vikasch2802@gmail.com">Vikasch2802@gmail.com</a>
-              </p>
+          </div>
 
-              <p>
-                <a href="mailto:khushigrewal1206@gmail.com">
-                  khushigrewal1206@gmail.com
-                </a>
-              </p>
-              <p>Mob. 9310935423</p>
+          <div className="contact-ids">
+            <div className="email">
+              <FontAwesomeIcon icon={faGlobe} />
+              <a href="mailto:freetoyam@gmail.com">freetoyam@gmail.com</a>
+            </div>
+
+            <div className="email">
+              <FontAwesomeIcon icon={faPhone} />
+              <a href="tel:9310935423">9310935423</a>
             </div>
           </div>
         </div>
-        <div className="copyright">
-          <p> &copy; 2024 Free Toyam All rights reserved</p>
+        <div>
+          <div className="copy">&copy; 2024 Free Toyam All Rights Reserved</div>
         </div>
       </div>
     </>

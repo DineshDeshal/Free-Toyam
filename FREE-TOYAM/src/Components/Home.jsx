@@ -3,7 +3,7 @@ import Navbar from "./Navbar"; // Corrected import name
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDroplet } from "@fortawesome/free-solid-svg-icons";
 import "./Home.css";
-import btl from '../assets/Bottles.png'
+import btl from "../assets/Bottles.png";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar /> 
+      <Navbar />
       <div className="main">
         <div className="theme">
           Spread your Brands like Water
@@ -23,13 +23,13 @@ export default function Home() {
             <FontAwesomeIcon icon={faDroplet} />
           </span>
         </div>
-        <div className="btncontact">
-          <button onClick={handleAdvertisementClick}>
+        <div>
+          <button className="Btn" onClick={handleAdvertisementClick}>
             Advertisement With Us
           </button>
         </div>
         <div className="btl-img">
-            <img src={btl} alt="" />
+          <img src={btl} alt="" />
         </div>
       </div>
     </>
